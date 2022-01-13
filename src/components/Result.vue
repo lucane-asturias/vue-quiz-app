@@ -14,7 +14,7 @@ export default {
     resultIndex() {
       let index = 0;
 
-      this.results.forEach((result, i) => {
+      this.results.findIndex((result, i) => {
         // checking if the total number of correct answers is above the minimum and above the maximum
         if (result.min <= this.totalCorrect && result.max >= this.totalCorrect) {
           index = i;
